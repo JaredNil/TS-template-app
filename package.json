@@ -1,0 +1,29 @@
+{
+	"name": "ts-template-app",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.ts",
+	"build": "tsc",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/JaredNil/TS-template-app.git"
+	},
+	"author": "JN",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/JaredNil/TS-template-app/issues"
+	},
+	"homepage": "https://github.com/JaredNil/TS-template-app#readme",
+	"dependencies": {
+		"@types/node": "^18.0.5",
+		"concurrently": "^7.4.0",
+		"nodemon": "^2.0.20",
+		"tslint": "^6.1.3",
+		"typescript": "^4.7.4"
+	},
+	"scripts": {
+		"start:ts": "tsc -w",
+		"start:js": "nodemon dist/index.js",
+		"start": "concurrently npm:start:*"
+	}
+}
