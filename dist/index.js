@@ -1,3 +1,4 @@
 "use strict";
-let a = new Object();
-console.log(typeof a);
+let a = 1;
+const c = a++ + 1;
+console.log(c);
